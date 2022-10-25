@@ -1,21 +1,21 @@
 import React from "react";
 import { Container } from "./about.style";
-import Image from "../../assets/img/about.jpg";
+import Image from "../../assets/img/capa-.jpeg";
 
 const About = () => {
   return (
     <Container>
       <div className="content-details">
-        <h1>Feito para todo dia, para todos</h1>
+        <h1>Made for every day, for everyone.</h1>
         <p>
-          owing to the claims of duty or the obligations of business it will
-          frequently occur that pleasures have to be repudiated
+          Owing to the claims of duty or the obligations of business it will
+          frequently occur that pleasures have to be repudiated.
         </p>
-        <button>Shop Now</button>
+        <button className="btn btn-shop">Shop Now</button>
       </div>
       <div className="content-img">
         <img src={Image} />
-        <button>Printed Shirts</button>
+        <button className="btn btn-printed">Printed Shirts</button>
       </div>
     </Container>
   );

@@ -26,6 +26,7 @@ export const Container = styled.div`
 
   h1 {
     font-family: "Poppins", sans-serif;
+    font-weight: 300;
     font-size: 35px;
     color: black;
   }
