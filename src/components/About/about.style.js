@@ -20,17 +20,8 @@ export const Container = styled.div`
   }
 
   .content-details h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-family: "Roboto", sans-serif;
-  }
-
-  .content-details p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    font-size: 14px;
   }
 
   .content-img {
@@ -52,12 +43,6 @@ export const Container = styled.div`
   }
 
   .btn {
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 1em 2em;
-    border: none;
-    z-index: 2;
-    font-weight: bold;
   }
 
   .btn-shop {

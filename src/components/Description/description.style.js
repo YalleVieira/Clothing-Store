@@ -7,13 +7,6 @@ export const Container = styled.div`
   gap: 30px;
   padding: 30px 20px;
 
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bolder;
-  }
-
   .icon-purple {
     color: mediumpurple;
   }

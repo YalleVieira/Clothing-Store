@@ -13,6 +13,32 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         .App {
+            max-width: 1200px;
             margin: 0 auto;
+        }
+
+        h3 {
+            font-family: "Roboto", sans-serif;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 1em 2em;
+            border: none;
+            z-index: 2;
+            font-weight: bold;
+        }
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 14px;
         }
 `;
