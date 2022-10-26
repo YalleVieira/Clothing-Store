@@ -66,5 +66,10 @@ export const Container = styled.div`
       color: white;
       box-shadow: 5px 5px white;
     }
+
+    @media (max-width: 768px) {
+      top: 0%;
+      left: 15%;
+    }
   }
 `;

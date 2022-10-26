@@ -56,13 +56,16 @@ export const Container = styled.div`
     }
   }
 
-  .login-icon {
-    color: #2c42fa;
+  .icon-bag {
+    cursor: pointer;
+
+    &:hover {
+      color: #3cb371;
+    }
   }
 
   @media (max-width: 768px) {
-    .link-page,
-    .link-shop {
+    .navbar {
       display: none;
     }
   }
