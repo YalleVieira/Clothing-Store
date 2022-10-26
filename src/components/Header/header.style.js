@@ -59,6 +59,13 @@ export const Container = styled.div`
   .login-icon {
     color: #2c42fa;
   }
+
+  @media (max-width: 768px) {
+    .link-page,
+    .link-shop {
+      display: none;
+    }
+  }
 `;
 
 export const Button = styled.button`

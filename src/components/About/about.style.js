@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   height: 100vh;
 
   .content-details {
@@ -25,6 +25,7 @@ export const Container = styled.div`
   }
 
   .content-img {
+    overflow: hidden;
     padding: 10px;
     width: 50%;
     display: flex;
@@ -36,13 +37,9 @@ export const Container = styled.div`
     border-bottom: 1px solid black;
 
     img {
-      width: 40%;
-      position: absolute;
+      width: 90%;
       z-index: 1;
     }
-  }
-
-  .btn {
   }
 
   .btn-shop {
@@ -61,7 +58,7 @@ export const Container = styled.div`
     border: 2px solid black;
     box-shadow: 5px 5px black;
     position: relative;
-    top: 15%;
+    top: -30%;
     left: 25%;
 
     &:hover {

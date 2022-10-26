@@ -7,7 +7,6 @@ import Recommend from "../../components/Recommend/Recommend";
 import NewCollection from "../../components/NewCollection/NewCollection";
 
 import ImageCollection from "../../assets/img/new-collection.png";
-import ShopAll from "../../assets/img/shop-all.jpeg";
 import NavBar from "../../components/NavBar/NavBar";
 import Talking from "../../components/Talking/Talking";
 import Subscribe from "../../components/Subscribe/Subscribe";
@@ -25,11 +24,6 @@ const Home = () => {
       <About />
       <Description />
       <Recommend />
-      <div className="shop-all">
-        <a href="">
-          <img src={ShopAll} />
-        </a>
-      </div>
       <NavBar />
       <NewCollection
         title1={title1}

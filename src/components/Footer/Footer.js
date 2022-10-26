@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./footer.style";
+import { Container, FooterNav } from "./footer.style";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <p>Inspired by webestica design.</p>
       </div>
-      <div className="footer-nav">
+      <FooterNav>
         <a href="">Home</a>
         <a href="">Shop</a>
         <a href="">About</a>
@@ -24,7 +24,7 @@ const Footer = () => {
         <a href="">Subscribe</a>
         <a href="">New Collection</a>
         <a href="">We Recommend</a>
-      </div>
+      </FooterNav>
     </Container>
   );
 };
