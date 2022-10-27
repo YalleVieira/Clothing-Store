@@ -1,14 +1,30 @@
 import React from "react";
 import { Container } from "./produtct.style";
+import { RiShoppingBagFill } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import {
+  addProductBag,
+  addProductFav,
+} from "../../store/product/product.action";
 
-const Product = ({ image, description }) => {
+const Product = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const handleAddBag = (e) => {
+    e.preventDefault();
+    dispatch(addProductFav(product));
+  };
+
   return (
     <Container>
-      <div className="container-img">
-        <img src={image} />
+      <img className="img-product" src={product.image} />
+      <div className="details-product">
+        <div className="text-product">
+          <p>{product.description}</p>
+          <span>$ {product.price} USD</span>
+        </div>
+        <RiShoppingBagFill onClick={handleAddBag} className="icon-bag" />
       </div>
-      <p>{description}</p>
-      <span>$ 18.00 USD</span>
     </Container>
   );
 };

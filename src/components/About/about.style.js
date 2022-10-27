@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  /* padding: 10px 20px; */
   height: 100vh;
+  padding-bottom: 30px;
 
   .content-details {
-    padding: 20px;
+    padding: 20px 30px;
     width: 50%;
     background-color: #3cb371;
     border-top: 1px solid black;
@@ -26,7 +26,7 @@ export const Container = styled.div`
 
   .content-img {
     overflow: hidden;
-    padding: 10px;
+    padding: 20px 40px;
     width: 50%;
     display: flex;
     flex-direction: column;

@@ -3,8 +3,9 @@ import backgroundLeaf from "../../assets/img/leaf-footer.png";
 
 export const Container = styled.div`
   width: 100%;
-  /* padding: 20px 30px; */
   display: flex;
+  position: static;
+  bottom: 0;
 
   .footer {
     width: 50%;
@@ -37,6 +38,7 @@ export const FooterNav = styled.div`
   background-image: url(${backgroundLeaf});
   background-position: top right;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

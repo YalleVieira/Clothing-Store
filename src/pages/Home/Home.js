@@ -22,9 +22,6 @@ const Home = () => {
     <Container>
       <Header />
       <About />
-      <Description />
-      <Recommend />
-      <NavBar />
       <NewCollection
         title1={title1}
         title2={title2}
@@ -33,6 +30,7 @@ const Home = () => {
       />
       <Talking />
       <Subscribe />
+      {/* <Description /> */}
       <Footer />
     </Container>
   );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 40px 30px 20px 30px;
+  padding: 40px 40px 20px 40px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -12,6 +12,7 @@ export const Container = styled.div`
     align-items: flex-start;
     text-align: left;
     gap: 20px;
+    padding: 1em;
   }
 
   .content-title h3 {

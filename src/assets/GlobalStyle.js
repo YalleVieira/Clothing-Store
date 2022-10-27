@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         .App {
-            /* max-width: 1200px; */
+            max-width: 1500px;
             margin: 0 auto;
         }
 

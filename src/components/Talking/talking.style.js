@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  padding: 40px 30px;
+  padding: 40px 50px;
 
   .container-talking {
     height: 260px;

@@ -11,6 +11,7 @@ const RoutesApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/bag" element={<BagPage />} />
+        {/* <Route path="/short" element={} */}
       </Routes>
     </BrowserRouter>
   );

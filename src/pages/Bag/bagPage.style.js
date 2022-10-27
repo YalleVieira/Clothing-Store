@@ -1,22 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
   .grid-area {
-    padding: 0 30px;
+    padding: 40px 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
   }
 
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
+  #bag-empty {
     text-align: center;
-    font-weight: bolder;
   }
 `;

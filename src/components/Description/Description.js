@@ -13,7 +13,6 @@ const Description = () => {
         times <RiLeafFill className="icon-orange" size=".8em" /> and good vibes.
         Get into a club!
       </h3>
-      <span>++++++++++++++++++++++++++++++++++++++++</span>
     </Container>
   );
 };

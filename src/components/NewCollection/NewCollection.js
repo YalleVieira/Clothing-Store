@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container } from "./newCollection.style";
 
 const NewCollection = ({ title1, title2, text, image }) => {
+  const navigate = useNavigate();
+
+  const handleShop = () => {
+    navigate("/shop");
+  };
+
   return (
     <Container>
       <div className="collection-details">
@@ -10,7 +17,9 @@ const NewCollection = ({ title1, title2, text, image }) => {
           <h3>{title2}</h3>
         </div>
         <p>{text}</p>
-        <button className="btn btn-shop">Shop Now</button>
+        <button onClick={handleShop} className="btn btn-shop">
+          Shop Now
+        </button>
       </div>
       <img src={image} />
     </Container>
