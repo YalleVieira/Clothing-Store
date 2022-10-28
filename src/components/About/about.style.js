@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100vh;
-  padding-bottom: 30px;
-  padding-top: 70px;
+  padding-top: 74px;
 
   .content-details {
     padding: 20px 30px;

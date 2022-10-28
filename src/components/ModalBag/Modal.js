@@ -18,7 +18,7 @@ function Modal({ productsFav }) {
   return (
     <Container>
       {productsFav.length === 0 ? (
-        <div className="modal-content">
+        <div className="modal-empty">
           <p>Empty bag...</p>
           <BsFillBagXFill size="2em" className="bag-empty" />
         </div>

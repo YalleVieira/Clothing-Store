@@ -29,9 +29,8 @@ export const Container = styled.div`
     }
   }
 
-  .modal-content {
-    min-height: 200px;
-    min-width: 200px;
+  .modal-content,
+  .modal-empty {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -54,6 +53,11 @@ export const Container = styled.div`
       font-size: 18px;
       color: black;
     }
+  }
+
+  .modal-empty {
+    display: flex;
+    flex-direction: row;
   }
 
   .bag-empty {

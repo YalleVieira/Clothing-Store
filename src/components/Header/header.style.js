@@ -9,6 +9,7 @@ export const Container = styled.div`
   gap: 20px;
   width: 100%;
   position: fixed;
+  height: 75px;
   z-index: 4;
   border-bottom: 1px solid black;
 
