@@ -8,7 +8,33 @@ export const Container = styled.div`
     gap: 30px;
   }
 
-  #bag-empty {
+  #content-empty {
     text-align: center;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+
+    p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .btn-back {
+      border: 2px solid black;
+      background-color: #3cb371;
+      box-shadow: 5px 5px black;
+      transition: ease 0.5s;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+
+  .bag-empty {
+    color: #3cb371;
   }
 `;

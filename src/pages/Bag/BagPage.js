@@ -5,23 +5,35 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import NavBar from "../../components/NavBar/NavBar";
 import { Container } from "./bagPage.style";
+import { BsFillBagXFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 function BagPage({ productsFav }) {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/");
+  };
+
   return (
     <Container>
       <Header />
       <NavBar />
-      <div className="grid-area">
-        {productsFav.length === 0 ? (
-          <div id="bag-empty">
-            <p>Empty bag!</p>
-          </div>
-        ) : (
-          productsFav.map((product) => {
+      {productsFav.length === 0 ? (
+        <div id="content-empty">
+          <p>Empty bag...</p>
+          <button onClick={handleBack} className="btn btn-back">
+            Back
+          </button>
+        </div>
+      ) : (
+        <div className="grid-area">
+          {" "}
+          {productsFav.map((product) => {
             return <Product product={product} />;
-          })
-        )}
-      </div>
+          })}
+        </div>
+      )}
     </Container>
   );
 }

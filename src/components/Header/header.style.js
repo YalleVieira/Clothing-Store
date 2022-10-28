@@ -8,6 +8,9 @@ export const Container = styled.div`
   align-items: center;
   gap: 20px;
   width: 100%;
+  position: fixed;
+  z-index: 4;
+  border-bottom: 1px solid black;
 
   .navbar {
     display: flex;
@@ -62,6 +65,14 @@ export const Container = styled.div`
     &:hover {
       color: #3cb371;
     }
+  }
+
+  .modal {
+    display: none;
+  }
+
+  .link-bag:hover .modal {
+    display: block;
   }
 
   @media (max-width: 768px) {

@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Container } from "./products.style";
 
 const Products = ({ listProducts }) => {
-  console.log("produtsc", listProducts);
   return (
     <Container>
       <div className="grid-area">

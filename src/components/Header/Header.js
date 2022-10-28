@@ -3,6 +3,7 @@ import "./header.style";
 import { RiShoppingBagFill } from "react-icons/ri";
 import { Container } from "./header.style";
 import { Link } from "react-router-dom";
+import Modal from "../ModalBag/Modal";
 
 const Header = () => {
   return (
@@ -14,7 +15,10 @@ const Header = () => {
       <Link to="/">
         <h1>ColorWonder</h1>
       </Link>
-      <Link to="/bag">
+      <Link to="/bag" className="link-bag">
+        <div className="modal">
+          <Modal />
+        </div>
         <RiShoppingBagFill className="icon-bag" size="1.5em" />
       </Link>
     </Container>
