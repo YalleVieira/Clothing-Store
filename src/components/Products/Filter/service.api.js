@@ -5,6 +5,7 @@ export function filterJeans(listProducts) {
       return value === "jeans";
     });
     if (jeans.length > 0) return product;
+    return;
   });
   console.log(typeJeans);
   return typeJeans;

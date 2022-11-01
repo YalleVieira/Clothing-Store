@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container } from "./navbar.style";
 
 const NavBar = () => {
   return (
     <Container>
-      <a href="">T-shirts</a>
-      <a href="">Jeans</a>
-      <a href="">Shorts</a>
-      <a href="">Gap</a>
+      <Link to="/t_shirt">T-shirts</Link>
+      <Link to="/jeans">Jeans</Link>
+      <Link to="/short">Shorts</Link>
+      <Link to="/gap">Gap</Link>
     </Container>
   );
 };
