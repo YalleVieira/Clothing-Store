@@ -3,10 +3,10 @@ import gap_blue from "./assets/img/products/gap-bluer.jpg";
 import gap_black from "./assets/img/products/gap-black.webp";
 import gap_red from "./assets/img/products/gap-red.jpg";
 import gap_pink from "./assets/img/products/gap-pink.jpg";
-import short_red from "./assets/img/products/short-red.webp";
+import short_jeans from "./assets/img/products/short_jeans.webp";
 import short_jeans2 from "./assets/img/products/short-jeans2.jpg";
 import short_jeans3 from "./assets/img/products/short-jeans3.jpg";
-import short_jeans from "./assets/img/products/short_jeans.webp";
+import short_jeans4 from "./assets/img/products/short-jeans4.jpg";
 import shirt_blue from "./assets/img/products/shirt-blue.jpg";
 import shirt_pink from "./assets/img/products/shirt-pink.webp";
 import shirt_green from "./assets/img/products/shirt-green.jpg";
@@ -86,10 +86,10 @@ export const productList = [
   },
   {
     id: 4554,
-    description: "Short red",
-    image: short_red,
+    description: "Short Jeans",
+    image: short_jeans4,
     price: 44.9,
-    type: ["short"],
+    type: ["short", "jeans"],
   },
   {
     id: 5877,
