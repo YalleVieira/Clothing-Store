@@ -41,4 +41,10 @@ export const GlobalStyle = createGlobalStyle`
             -webkit-box-orient: vertical;
             font-size: 14px;
         }
+        .grid-area {
+            padding: 40px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 30px;
+  }
 `;

@@ -2,6 +2,7 @@ import gap from "./assets/img/products/bone.webp";
 import gap_blue from "./assets/img/products/gap-bluer.jpg";
 import gap_black from "./assets/img/products/gap-black.webp";
 import gap_red from "./assets/img/products/gap-red.jpg";
+import gap_jeans from "./assets/img/products/gap-jens.jpg";
 import gap_pink from "./assets/img/products/gap-pink.jpg";
 import short_jeans from "./assets/img/products/short_jeans.webp";
 import short_jeans2 from "./assets/img/products/short-jeans2.jpg";
@@ -20,6 +21,14 @@ export const productList = [
     price: 18.9,
     type: ["gap"],
   },
+  {
+    id: 906,
+    description: "Gap Jeans",
+    image: gap_jeans,
+    price: 18.9,
+    type: ["gap", "jeans"],
+  },
+
   {
     id: 234,
     description: "Gap Red",
