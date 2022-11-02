@@ -37,6 +37,14 @@ export const Container = styled.div`
     }
   }
 
+  .icon-social {
+    transition: ease 0.9s;
+  }
+
+  .icon-social:hover {
+    transform: scale(1.2);
+  }
+
   .social-media {
     display: flex;
     gap: 10px;

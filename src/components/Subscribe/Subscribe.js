@@ -25,16 +25,16 @@ const Subscribe = () => {
         </button>
       </form>
       <div className="social-media">
-        <a href="">
+        <a href="" className="icon-social">
           <img src={Instagram} alt="Icone do instagram" />
         </a>
-        <a href="">
+        <a href="" className="icon-social">
           <img alt="Icone do twitter" src={Twitter} />
         </a>
-        <a href="">
+        <a href="" className="icon-social">
           <img src={Email} alt="icone do email" />
         </a>
-        <a href="">
+        <a href="" className="icon-social">
           <img src={Facebook} alt="icone do facebook" />
         </a>
       </div>
