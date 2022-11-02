@@ -1,15 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
-import Product from "../../components/CardProduct/Product";
-import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import NavBar from "../../components/NavBar/NavBar";
 import { Container } from "./bagPage.style";
-import { BsFillBagXFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
 function BagPage({ productsFav }) {
   const navigate = useNavigate();
+
+  const calculoTotal = () => {
+    var value = productsFav.map((product) => {
+      return parseFloat(product.price);
+    });
+    var total = value.reduce(function (price, i) {
+      return price + i;
+    });
+    return total;
+  };
 
   const handleBack = () => {
     navigate("/");
@@ -18,7 +24,6 @@ function BagPage({ productsFav }) {
   return (
     <Container>
       <Header />
-      <NavBar />
       {productsFav.length === 0 ? (
         <div id="content-empty">
           <p>Empty bag...</p>
@@ -27,11 +32,23 @@ function BagPage({ productsFav }) {
           </button>
         </div>
       ) : (
-        <div className="grid-area">
+        <div className="content-product">
           {" "}
-          {productsFav.map((product) => {
-            return <Product product={product} />;
-          })}
+          <div className="">
+            {productsFav.map((product) => {
+              return (
+                <div className="card-product">
+                  <img src={product.image} />
+                  <p>{product.description}</p>
+                  <span>R$ {product.price}</span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="total-products">
+            <p>Total items: {productsFav.length}</p>
+            <p>Amount: R$ {calculoTotal()}</p>
+          </div>
         </div>
       )}
     </Container>

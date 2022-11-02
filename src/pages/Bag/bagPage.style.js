@@ -34,6 +34,41 @@ export const Container = styled.div`
     }
   }
 
+  .header-bag {
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  .content-product {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .total-products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-product {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 20px;
+    align-items: center;
+    width: 350px;
+    box-shadow: 15px 5px 10px #ccc;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   .bag-empty {
     color: #3cb371;
   }

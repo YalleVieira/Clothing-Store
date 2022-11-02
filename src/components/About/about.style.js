@@ -47,8 +47,12 @@ export const Container = styled.div`
     background-color: black;
     color: white;
     box-shadow: 5px 5px #ffa500;
+    border: 2px solid black;
+    transition: all 0.7s ease-out;
 
     &:hover {
+      border: 2px solid black;
+      box-shadow: 5px 5px black;
       background-color: white;
       color: black;
     }
@@ -58,6 +62,7 @@ export const Container = styled.div`
     border: 2px solid black;
     box-shadow: 5px 5px black;
     position: relative;
+    transition: all 0.7s ease-out;
     top: -30%;
     left: 25%;
 
